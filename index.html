@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks</title>
     <!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -16,44 +16,42 @@
 </head>
 <body>
   <!-- --------------------------------------------------------------------------Navbar------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <div class="container-fluid">
-          <img class="starbucks-logo ms-3" src="starbucks/starbuckslogo.png" width="40px" height="40px">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-dark" active aria-current="page" href="#">MENU</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-dark" href="#">REWARDS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-dark" href="#">GIFT CARDS</a>
-              </li>
-            </ul>
-            <div class="right-section">
-              <div class="navbar-icon d-flex">
-                <img src="starbucks/location icon.png" width="40px" height="23">
-                <a class="nav-link me-5 "href="#">Find a store</a>
-
-
-              </div>
-              <button class="sign-in me-4 border rounded-pill border-dark" type="submit">Sign in</button>
-              <button class="join-now me-4 border rounded-pill bg-dark text-white" type="button">Join now</button>
-
-            </div>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom border-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="starbucks/starbuckslogo.png" width="30px" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+        <!-- Main navigation links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="#">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-dark" href="#">REWARDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-dark" href="#">GIFT CARDS</a>
+          </li>
+        </ul>
+        <!-- Store Locator and Buttons -->
+        <div class="d-flex align-items-center nav_store_link">
+          <div class="mylocation d-flex justify-content-center align-items-center">
+              <i class="fa-sharp fa-solid fa-location-dot me-2"></i>
+              <p class="me-3 mt-3">Find a store</p>
           </div>
+          <button type="button" class="btn btn-light rounded-pill border-dark fw-normal">Sign In</button>
+          <button type="button" class="btn btn-dark rounded-pill m-3">Join now</button>
         </div>
-      </nav>
-
-      <hr>
+      </div>
+    </div>
+  </nav>
       <!-- ---------------------------------------------------------Navbar end ---------------------------------------------------------------->
        <!------------------------------------------------------- container-1 ------------------------------------------------------------------->
       <div class="container-fluid">
-        <div class="row mx-3 my-3" >
+        <div class="row mx-3 my-3 c1" >
           <div class="col-md-6 order-md-1 order-2 order-sm-2 bg-color d-flex text-center text-white flex-column justify-content-center px-5 py-5">
           
               <h1 class="heading">Yays for fall days</h1>
