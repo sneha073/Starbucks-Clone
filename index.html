@@ -16,50 +16,38 @@
 </head>
 <body>
   <!-- --------------------------------------------------------------------------Navbar------------------------------------------------------------- -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand ms-3" href="#">
-            <img src="starbucks/starbuckslogo.png" alt="Starbucks Logo" width="40" height="40">
-        </a>
-
-        <!-- Toggler Button for Mobile View -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <img class="starbucks-logo ms-3" src="starbucks/starbuckslogo.png" width="40px" height="40px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <!-- Navbar Links (Left) -->
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-dark active" aria-current="page" href="#">MENU</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-dark" href="#">REWARDS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-dark" href="#">GIFT CARDS</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" active aria-current="page" href="#">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">REWARDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">GIFT CARDS</a>
+              </li>
             </ul>
+            <div class="right-section d-flex justify-content-end">
+              <div class="navbar-icon d-flex">
+                <img src="starbucks/location icon.png" width="40px" height="23">
+                <a class="nav-link me-5 "href="#">Find a store</a>
 
-            <!-- Right Section (Icons and Buttons) -->
-            <div class="d-flex align-items-center">
-                <!-- Location Icon and Link -->
-                <div class="d-flex align-items-center me-4">
-                    <img src="starbucks/location icon.png" alt="Location Icon" width="41" height="auto">
-                    <a class="nav-link ms-2" href="#">Find a store</a>
-                </div>
 
-                <!-- Sign-in Button -->
-                <button class="btn border rounded-pill border-dark me-3" type="button">Sign in</button>
+              </div>
+              <button class="sign-in me-4 border rounded-pill border-dark" type="submit">Sign in</button>
+              <button class="join-now me-4 border rounded-pill bg-dark text-white" type="button">Join now</button>
 
-                <!-- Join Now Button -->
-                <button class="btn btn-dark rounded-pill me-3 text-white" type="button">Join now</button>
             </div>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
 
       <hr>
       <!-- ---------------------------------------------------------Navbar end ---------------------------------------------------------------->
